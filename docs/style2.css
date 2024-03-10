@@ -1,0 +1,96 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height : 10vh;
+    align-items: center;
+    padding-left: 2rem;
+}
+header img{
+    width: 5rem;
+    height:auto;
+    padding-left: 0.5rem;
+    
+}
+header a{
+    display: inline-block;
+    width: 10%;
+    height: auto;
+}
+.menu{
+    text-decoration: none;
+    list-style: none;
+    padding: 2rem;
+}
+.menu a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.menu li{
+    display: inline;
+}
+.icon{
+    width: 2rem;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.container>*{
+    width:20%;
+}
+.container>label{
+    font-size: 1rem;
+    color: grey;
+}
+.container>h1{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+input{
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background-color: whitesmoke;
+    color: gray;
+}
+button{
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+}
+.bot {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    animation: blink-fade 1s step-end infinite;
+}
+.bot>img{
+    width: 3rem;
+    height: 3rem;
+}
+@keyframes blink-fade {
+    from { opacity: 1; } 
+    25% { opacity: 0; }  
+    50% { opacity: 0; }  
+    75% { opacity: 1; }  
+    to { opacity: 1; }
+}
